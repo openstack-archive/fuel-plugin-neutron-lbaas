@@ -1,14 +1,13 @@
-# Plugin name
 name: lbaas
 title: LBaaS plugin for Neutron
-# Plugin version
 version: 1.0.1
-# Description
 description: Enables LBaaS for Neutron. Be aware, in HA mode rescheduling of LB instances will not work!!
-# Required fuel version
 fuel_version: ['6.0','6.1']
+licenses: ['Apache License Version 2.0']
+authors: ['Stanislaw Bogatkin']
+homepage: 'https://github.com/stackforge/fuel-plugin-neutron-lbaas'
+groups: ['network']
 
-# The plugin is compatible with releases in the list
 releases:
   - os: ubuntu
     version: 2014.2-6.0
@@ -31,5 +30,4 @@ releases:
     deployment_scripts_path: deployment_scripts/
     repository_path: repositories/centos
 
-# Version of plugin package
 package_version: '2.0.0'
