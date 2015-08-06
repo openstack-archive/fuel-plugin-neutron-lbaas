@@ -1,0 +1,9 @@
+Verified+2: Jenkins
+Code-Review+1: Evgeniy L <eli@mirantis.com>
+Code-Review+2: Stanislaw Bogatkin <sbogatkin@mirantis.com>
+Workflow+1: Stanislaw Bogatkin <sbogatkin@mirantis.com>
+Submitted-by: Jenkins
+Submitted-at: Thu, 06 Aug 2015 14:59:08 +0000
+Reviewed-on: https://review.openstack.org/209971
+Project: stackforge/fuel-plugin-neutron-lbaas
+Branch: refs/heads/master
