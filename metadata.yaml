@@ -5,7 +5,7 @@ description: Enables LBaaS for Neutron. Be aware, in HA mode rescheduling of LB 
 fuel_version: ['6.1']
 licenses: ['Apache License Version 2.0']
 authors: ['Stanislaw Bogatkin']
-homepage: 'https://github.com/stackforge/fuel-plugin-neutron-lbaas'
+homepage: 'https://github.com/openstack/fuel-plugin-neutron-lbaas'
 groups: ['network']
 
 releases:
