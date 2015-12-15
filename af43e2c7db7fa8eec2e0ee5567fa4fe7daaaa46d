@@ -1,0 +1,12 @@
+Verified+2: Jenkins
+Code-Review+1: Victor Howard <victor.r.howard@gmail.com>
+Code-Review+2: Sergey Kolekonov <skolekonov@mirantis.com>
+Workflow+1: Sergey Kolekonov <skolekonov@mirantis.com>
+Code-Review+1: Igor Belikov <ibelikov@mirantis.com>
+Code-Review+1: venkatamahesh <venkatamaheshkotha@gmail.com>
+Code-Review+1: Clint Adams <clint@gcfm.net>
+Submitted-by: Jenkins
+Submitted-at: Tue, 15 Dec 2015 14:49:20 +0000
+Reviewed-on: https://review.openstack.org/236409
+Project: openstack/fuel-plugin-neutron-lbaas
+Branch: refs/heads/6.0
