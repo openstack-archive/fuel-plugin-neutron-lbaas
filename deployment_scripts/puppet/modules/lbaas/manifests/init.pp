@@ -51,11 +51,15 @@ class lbaas {
 #   }
 # }
 
-# Sorry, that needs to rework, obviously, but I haven't so much time to do it.
-  exec { "add_lbaas_plugin":
-    command => "/bin/sed -i \"/`egrep -v \'(^#|^$)\' $lbaas::params::neutron_conf_file | egrep \'.*service_plugins.*\'`/ s/$/,lbaas/\" $lbaas::params::neutron_conf_file",
-    unless  => "/bin/egrep -v '(^#|^$)' $lbaas::params::neutron_conf_file | egrep '.*service_plugins.*lbaas.*'",
-    notify  => Service['neutron-server']
+  ini_subsetting { "add_lbaas_plugin":
+    ensure               => present,
+    path                 => $lbaas::params::neutron_conf_file,
+    section              => 'DEFAULT',
+    key_val_separator    => '=',
+    setting              => 'service_plugins',
+    subsetting_separator => ',',
+    subsetting           => 'lbaas',
+    notify               => Service['neutron-server'],
   }
 
   lbaas_config {
