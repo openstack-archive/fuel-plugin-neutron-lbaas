@@ -1,0 +1,11 @@
+- id: deploy-lbbas-service
+  type: puppet
+  version: 2.0.0
+  groups: [primary-controller, controller]
+  requires: [deploy_start, openstack-network-end]
+  required_for: [deploy_end]
+  parameters:
+    puppet_manifest: puppet/manifests/site.pp
+    puppet_modules: puppet/modules:/etc/puppet/modules
+    timeout: 360
+
